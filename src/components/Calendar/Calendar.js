@@ -47,6 +47,10 @@ class Calendar extends Component {
     return <div className="days row">{days}</div>;
   }
 
+  /*========================================
+                 START HIGHLIGHTED
+  =========================================*/
+  
   renderCells() {
     const { today, currentMonth } = this.state;
     const monthStart = dateFns.startOfMonth(currentMonth);
@@ -120,6 +124,10 @@ class Calendar extends Component {
     }
     return <div className="body">{rows}</div>;
   }
+
+  /*========================================
+                 END HIGHLIGHTED
+  =========================================*/
 
   nextMonth = () => {
     this.setState({
